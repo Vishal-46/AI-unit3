@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.intro {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.intro h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.branches {
+    background-color: #eef2f3;
+    padding: 20px;
+}
+
+.branches h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.flowchart {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flow-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.flow-item h3 {
+    font-size: 28px;
+    color: #0e76a8;
+}
+
+.flow-item p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.detailed-explanation {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.detailed-explanation h2, .detailed-explanation h3, .detailed-explanation h4 {
+    color: #0e76a8;
+}
+
+.flowchart-diagram {
+    margin-top: 20px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chart-node {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.line {
+    width: 2px;
+    height: 40px;
+    background-color: #0e76a8;
+    margin: 10px auto;
+}
+
+.chart-branch {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.game-theory-application {
+    padding: 20px;
+    background-color: #eef2f3;
+}
+
+footer {
+    background-color: #282c34;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+/* Flowchart Section */
+.flowchart-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f7f9;
+}
+
+.flowchart-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #0e76a8;
+}
+
+.flowchart ul {
+    padding-top: 20px;
+    position: relative;
+    margin-left: 50px;
+}
+
+.flowchart li {
+    list-style-type: none;
+    margin: 20px;
+    padding-left: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.flowchart li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    border-left: 2px solid #0e76a8;
+    border-bottom: 2px solid #0e76a8;
+    height: 100%;
+    width: 20px;
+}
+
+.flowchart li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    border-left: 2px solid #0e76a8;
+    height: 20px;
+    width: 10px;
+}
+
+.flowchart ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    border-left: 2px solid #0e76a8;
+    height: 100%;
+}
+
+.branch {
+    background-color: #0e76a8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+}
+
+.branch:hover {
+    background-color: #005f99;
+}
+
+.flowchart ul ul li .branch {
+    background-color: #1f8cb8;
+}
+
+.flowchart ul ul ul li .branch {
+    background-color: #29a3e0;
+}
+
+@media (max-width: 768px) {
+    .flowchart {
+        margin-left: 0;
+    }
+
+    .flowchart li::before,
+    .flowchart li::after {
+        left: -15px;
+    }
+}
+.intro p {
+    font-weight:700;
+    font-size: larger;
+}
+.flow-item p{
+    font-size: larger;
+}
+.detailed-explanation p{
+    font-size: large;
+}
